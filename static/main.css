@@ -19,6 +19,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .site-header .navbar-nav .nav-link:hover {
   color: #ffffff;
+  transition: 0.5s;
+  
 }
 
 .site-header .navbar-nav .nav-link.active {
@@ -38,7 +40,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a.article-title:hover {
-  color: #428bca;
+  color: #ce9468;
   text-decoration: none;
 }
 
@@ -67,4 +69,22 @@ a.article-title:hover {
   width: 25px;
   height: 25px;
   vertical-align: middle;
+}
+
+
+/*This is modifying the btn-primary colors but you could create your own .btn-something class as well*/
+.btn {
+  color: #fff;
+  background-color:#ce9468;
+  border-color: #ce9468; /*set the color you want here*/
+}
+.btn:hover, .btn:focus, .btn:active, .btn.active, .open>.dropdown-toggle.btn {
+  color: #333;
+  background-color: #f0dfd1;
+  border-color: #f0dfd1; /*set the color you want here*/
+
+}
+
+.col-md-8 {
+  max-width: 100%
 }
