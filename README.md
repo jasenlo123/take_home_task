@@ -12,9 +12,14 @@ $ pip install virtualenv
 $ virtualenv env
 ```
 
-3. Then run the command (for mac):
+3a. Then run the command:
+ (for mac)
 ```
-$  source env\bin\activate
+$  source env\bin\activate 
+```
+ (for windows)
+```
+$  \env\Scripts\activate.bat
 ```
 
 4. Then install the dependencies:

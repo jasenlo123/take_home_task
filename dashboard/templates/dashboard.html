@@ -1,11 +1,17 @@
 {% extends "layout.html" %}
 {% block content %}
+
+  <div class="content-section">
+    <h3>Welcome to the dashboard, {{current_user.name}}!</h3>
+    <p class='text-muted'>Please click on each individual post to update or delete them. 
+    </p>
+  </div>
   {% if posts is defined and posts|length > 0 %}
       {% for post in posts %}
         <article class="media content-section">
           <div class="media-body">
             <div class="article-metadata">
-              <small class="text-muted">{{ post.date_posted }}</small>
+              <small class="text-muted">{{ post.date_posted.date() }}</small>
               <h6 class="mr-2">{{ post.author.name }} ({{ post.author.role }})</h6>
             </div>
             <h2><a class="article-title" href="{{ url_for('post', post_id=post.id) }}">{{ post.title }}</a></h2>
@@ -20,4 +26,6 @@
       </div>
     </article>
     {% endif %}
+
 {% endblock content %}
+
