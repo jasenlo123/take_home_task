@@ -1,6 +1,6 @@
 {% extends "layout.html" %}
 {% block content %}
-    {% if posts is not none %}   
+  {% if posts is defined and posts|length > 0 %}
       {% for post in posts %}
         <article class="media content-section">
           <div class="media-body">
@@ -14,10 +14,10 @@
         </article>
       {% endfor %}
     {% else %}
-      <article class="media content-section">
-        <div class="media-body">
-          <h1>No Posts Yet!</h1>
-        </div>
-      </article>
+    <article class="media content-section">
+      <div class="media-body">
+          <h1>No posts yet!</h1>
+      </div>
+    </article>
     {% endif %}
 {% endblock content %}
