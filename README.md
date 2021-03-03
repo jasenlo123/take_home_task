@@ -12,14 +12,14 @@ $ pip install virtualenv
 $ virtualenv env
 ```
 
-3a. Then run the command:
+3. Then run the command:
  (for mac)
 ```
-$  source env\bin\activate 
+$  source env/bin/activate 
 ```
  (for windows)
 ```
-$  \env\Scripts\activate.bat
+$  source env/Scripts/activate.bat
 ```
 
 4. Then install the dependencies:
@@ -29,4 +29,4 @@ $ pip install -r requirements.txt
 
 5. Finally start the web server:
 ```
-$ python dashboard.py
+$ python run.py
