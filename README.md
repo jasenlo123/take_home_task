@@ -2,6 +2,8 @@
 Hello! This is a server side template engine implementation of the dashboard created with Flask and Jinja, so this implementation doesn't have an external API. I built this to fulfill the requirements of the task in case I couldn't figure out RESTful, but I did [here](https://github.com/jasenlo123/take_home_task2)!
 
 ### How To Run
+**Requires pip and python**
+
 1. Install `virtualenv`:
 ```
 $ pip install virtualenv
