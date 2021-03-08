@@ -16,9 +16,11 @@ Hi Prof Stern, this is a blog-dashboard web application built in Flask, with CSS
       "password": "worldhello",
   ```
 
-### Repo Strucutre
+### Repository Strucutre
 Since I divided the application code into different modules such as ```forms.py```, ```routes.py```, and ```models.py```, I ran into circular import issues. For instance, when I tried to call the ```models.py``` module from ```app.py``` in the same folder, Python wouldn't be able to import ```app.py``` because Python names the running script ```__main__```. Thus, I structured the main application code in the ```dashboard``` folder as a package and a ```app.py``` initialisation script to prevent. The templates folder in the ```dashboard``` package contains the Jinja templates.
 
+- Repo Tree
+```
 ├── README.md
 ├── app.py
 ├── dashboard
@@ -39,6 +41,7 @@ Since I divided the application code into different modules such as ```forms.py`
 ├── requirements.txt
 ├── test.py
 └── user.json
+```
 
 ### How To Run
 ```
