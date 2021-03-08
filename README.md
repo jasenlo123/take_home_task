@@ -46,10 +46,10 @@ Since I divided the application code into different modules such as ```forms.py`
 ### How To Run
 ```
 $ python3.6 -m venv .venv 
-$source .venv/bin/activate
-$pip3 install -r requirements.txt
-$export FLASK_APP=app.py
-$flask run
+$ source .venv/bin/activate
+$ pip3 install -r requirements.txt
+$ export FLASK_APP=app.py
+$ flask run
 ```
 
 
